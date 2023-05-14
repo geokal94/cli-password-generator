@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cli-password-generator"
+version = "0.1.0"
+description = "A CLI password generator"
+authors = ["Giorgos Kallis <giorgos.kallis.gr@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cli_password_generator"}]
+
+[tool.poetry.scripts]
+generate-password = "cli_password_generator.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+clipboard = "^0.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
