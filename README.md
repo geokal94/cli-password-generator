@@ -1,4 +1,4 @@
-# Password Generator
+# CLI Password Generator
 
 [PyPi Package](https://pypi.org/project/cli-password-generator/)
 
